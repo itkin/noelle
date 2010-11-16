@@ -326,19 +326,19 @@ a {
   font-style: italic;
 }
 /* line 179, ../../../app/stylesheets/application.sass */
-#page.categories #main_content {
+#page.categories #category_comment {
   font-size: 12px;
   height: 500px;
 }
 /* line 182, ../../../app/stylesheets/application.sass */
-#page.categories #main_content a#access_to_project {
+#page.categories #category_comment a#access_to_project {
   display: block;
   margin-top: 20px;
   text-align: right;
   color: #666666;
 }
 /* line 187, ../../../app/stylesheets/application.sass */
-#page.categories #main_content a#access_to_project:hover {
+#page.categories #category_comment a#access_to_project:hover {
   text-decoration: unerline;
 }
 /* line 191, ../../../app/stylesheets/application.sass */

@@ -1,8 +1,8 @@
 - content_for :side_content do
   = render :partial => "list"
 
-= raw @category.description
-
-= link_to "Accéder au diaporama", category_project_path(@category, @category.projects.first), :id => 'access_to_project'
+#category_comment
+  = raw @category.comment
+  = link_to "Accéder au diaporama", category_project_path(@category, @category.projects.first), :id => 'access_to_project'
 
 = javascript_tag "displayProject(#{@category.timer*1000})" unless @category.timer.to_i == 0 

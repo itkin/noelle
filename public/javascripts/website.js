@@ -15,12 +15,12 @@ $(function(){
 
 
   // Barre de défilement sur les pages custo
-  $("#page.pages #page_content").jScrollPane();
+  $("#page_content, #category_comment").jScrollPane();
 
 
   // Animations du menu
   $('ul.categories > li > a').toggle(function(e){
-    if ($(this).attr('data-description') == 'true'){
+    if ($(this).attr('data-comment') == 'true'){
       window.location = $(this).attr('href');
     } else {
       e.preventDefault();

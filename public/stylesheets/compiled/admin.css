@@ -135,7 +135,7 @@ a img {
   overflow-x: hidden;
 }
 
-/* line 37, ../../../app/stylesheets/admin.sass */
-.position-column input.inplace_field {
+/* line 38, ../../../app/stylesheets/admin.sass */
+.position-column input.inplace_field, .timer-column input.inplace_field {
   width: 20px;
 }

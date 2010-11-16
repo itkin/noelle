@@ -7,4 +7,8 @@ module Admin::PicturesHelper
   def description_form_column(record, options)
     text_area record, :description, :value => record.description, :name => options[:name], :id => options[:id], :class => options[:class]
   end
+
+  def description_column(record)
+    raw record.description
+  end
 end

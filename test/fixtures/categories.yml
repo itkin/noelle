@@ -6,4 +6,4 @@ one:
 two:
   title: La complexité d'une combinaison de pas
   position: 2
-  description: test
+  comment: test

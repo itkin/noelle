@@ -14,8 +14,8 @@
       #content
         #tabs
           %ul
-            %li= link_to content_tag(:span, "Pages"), admin_pages_path, :title => "pages_cont"
             %li= link_to content_tag(:span, "Catégories & projets"), admin_categories_path
+            %li= link_to content_tag(:span, "Pages"), admin_pages_path, :title => "pages_cont"
             %li= link_to content_tag(:span, "Traductions"), admin_translations_path
             %li= link_to content_tag(:span, "Utilisateurs"), admin_users_path            
           #pages_cont= yield
