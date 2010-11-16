@@ -1,0 +1,17 @@
+= content_for :side_content do
+  %h2
+    .title= @project.title
+    .sub_title= @project.sub_title
+
+  #gallery_controls
+    %h3
+    .counter
+    = link_to "< précédente", "#", :id => "previous"
+    = link_to "suivante >", "#", :id => "next"
+    = link_to " plein écran", "#", :id => "fullscreen"
+
+= content_for :back do
+  = link_to categories_path do
+    = image_tag 'back.jpg'
+
+= render :partial => 'pictures/gallery', :locals => { :pictures => @project.pictures }

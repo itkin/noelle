@@ -1,0 +1,6 @@
+[submodule "vendor/plugins/ordered_collection"]
+	path = vendor/plugins/ordered_collection
+	url = git@github.com:itkin/ordered_collection.git
+[submodule "vendor/plugins/constants_in_db"]
+	path = vendor/plugins/constants_in_db
+	url = git@github.com:itkin/constants_in_db.git

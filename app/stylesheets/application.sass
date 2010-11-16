@@ -1,0 +1,218 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset"
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint"
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base"
+//@import "partials/form";
+//@import "partials/two_col";
+
+@import "blueprint/grid"
+
+// Combine the partials into a single screen stylesheet.
+//@import "partials/page";
+
+@import "compass/utilities/lists/inline-list"
+@import "compass/utilities/links/link-colors"
+@import "compass/utilities/lists/bullets"
+
+$dark_grey = #666666
+$light_grey = #999999
+$green = #333300
+$height = 514px
+//Layout
+a
+  text-decoration: none
+
+#banner
+  position: absolute
+  top: 150px
+  height: 80px
+  background: $green
+  width: 100%
+  z-index: 0
+
+
+#page
+  z-index: 1
+  position: relative
+  +container
+  color: $dark_grey
+  font-family: helvatica, arial
+  text-align: left
+
+  #top_banner
+    +column(24, last)
+    height: 115px
+    h1
+      text-align: right
+      padding-top: 15px
+      padding-bottom: 30px
+      font-size: 21px
+      a, a:visited
+        color: $light_grey
+
+    #menu
+      margin: 0
+      padding: 0
+      font-size: 14px
+      +inline-list
+      float: right
+      a
+        +link-colors($light_grey)
+        &.selected
+          color: $dark_grey
+
+  #side_content_wrapper, #main_content_wrapper
+    background: white
+    height: $height
+    border: 1px solid black
+  
+  #side_content_wrapper
+    +column(7)
+    width: 278px
+
+  #main_content_wrapper
+    +column(17,true)
+    border-left: none
+    width: 679px
+
+  #side_content, #main_content
+    margin: 7px
+    height: $height - ( 7px * 2 ) - 2px 
+
+  #footer
+    +column(24,true)
+    text-align: right
+    font-size: 10px
+
+
+
+#page
+  &.pages
+    #side_content
+      margin: 0
+    #page_content
+      font-size: 12px
+      height: 500px
+    &.index
+      #side_content
+        color: $green
+        margin-left: 15px
+        background: white
+        height: $height - 32px
+        h2
+          margin-top: 32px
+          font-size: 14px
+          padding-left: 15px
+          text-transform: uppercase
+          background: image-url('arrow-icon.png') left center no-repeat
+        ul
+          font-size: 12px
+          +no-bullets
+          padding-left: 25px
+          a, a:visited
+            color: $green
+
+    &.contact
+      #side_content_wrapper, #main_content_wrapper
+        border: none
+      #side_content
+        background: $green
+        height: 80px
+        margin-top: 35px
+        margin-right: 0
+        margin-left: 0
+        width: 274px + 7px - 2px + 1px
+        position: relative
+        left: -1px
+
+
+      #main_content
+        margin-left: 0
+        margin-right: 0
+        background: $green
+        height: 80px
+        margin-top: 35px
+        text-align: center
+        line-height: 25px
+        color: white
+
+      #page_content
+        padding-top: 15px
+        a
+          color: white
+          letter-spacing: 1px
+          &:hover
+            text-decoration: underline
+
+
+  &.categories.index
+    #side_content
+      margin: 7px
+      background: $green
+
+    ul.categories
+      font-size: 13px
+      padding-top: 40px - 10px
+      +no-bullets
+      li
+        margin-bottom: 5px
+        padding-top: 10px
+        a
+          background: white
+          color: $green
+          padding-right: 1ex
+      ul.projects
+        margin-left: 25px
+        margin-top: 10px
+        li
+          padding-top: 0
+          a
+            color: white
+            background: $green
+            font-style: italic
+
+  &.projects.show
+    #side_content
+      margin-top: 35px - 1px
+      h2
+        background: $green
+        height: 80px
+        width: 274px + (7px * 2) - 5px + 2px
+        position: relative
+        right: 5px
+        div
+          padding-top: 13px
+          margin-right: 28px
+          text-align: right
+          font-size: 16px
+          color: white
+          .sub_title
+            font-size: 12px
+
+      #gallery_controls
+        margin-top: 20px
+        font-size: 13px
+        text-align: center
+        a, a:visited
+          color: $dark_grey
+        h3
+          height: 21px
+          font-size: 16px
+          font-weight: bold
+        .counter
+          height: 17px
+        #next
+          padding-left: 30px
+        #fullscreen
+          display: block
+
+    #thumbs
+      margin-top: 30px
+      height: 67px
+      +column(24,true)
+
+

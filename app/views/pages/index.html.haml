@@ -1,0 +1,7 @@
+- content_for :side_content do
+  %h2 Other Languages
+  %ul
+    - @translations.each do |translation|
+      %li= link_to(translation.language, translation.file.url)
+
+= render :partial => 'pictures/gallery', :locals => { :pictures => @pictures }

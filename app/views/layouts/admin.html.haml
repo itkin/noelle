@@ -1,0 +1,21 @@
+%html
+  %head
+    = stylesheet_link_tag "jquery-ui.start/jquery-ui-1.8.6.custom", 'compiled/admin', :cache => 'admin_all'
+    = javascript_include_tag 'jquery', 'jquery-ui', 'rails_jquery', 'tiny_mce/tiny_mce','jquery.tinymce', 'jquery.livequery', 'admin', :cache => 'admin_all'
+    = active_scaffold_includes
+    = csrf_meta_tag
+  %html
+    #page
+      #banner
+        %h1 ::ADMIN
+        #user_links
+          %span= current_user.email
+          = link_to "Log out", destroy_user_session_path
+      #content
+        #tabs
+          %ul
+            %li= link_to content_tag(:span, "Pages"), admin_pages_path, :title => "pages_cont"
+            %li= link_to content_tag(:span, "Catégories & projets"), admin_categories_path
+            %li= link_to content_tag(:span, "Traductions"), admin_translations_path
+            %li= link_to content_tag(:span, "Utilisateurs"), admin_users_path            
+          #pages_cont= yield

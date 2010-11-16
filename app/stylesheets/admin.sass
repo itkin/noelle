@@ -1,0 +1,40 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset"
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint"
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base"
+//@import "partials/form";
+//@import "partials/two_col";
+
+@import "blueprint/grid"
+@import "compass/css3/border-radius"
+
+#page
+  +container
+  #banner
+    color: white
+    font-family: Verdana,Arial,sans-serif
+    margin-bottom: 20px
+    +column(24,true)
+    +border-radius(5px)
+    height: 100px
+    background: url("/stylesheets/jquery-ui.start/images/ui-bg_gloss-wave_75_2191c0_500x100.png") repeat-x scroll 50% 50% #2191C0
+    position: relative
+    h1
+      font-size: 30px
+      margin-left: 20px
+      margin-top: 10px
+    #user_links
+      position: absolute
+      bottom: 10px
+      right: 20px
+  #content
+    +column(24,true)
+
+.position-column input.inplace_field
+  width: 20px
+
+

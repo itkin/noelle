@@ -1,0 +1,7 @@
+nicolas:
+  email: nicolas@w3bflows.com
+  encrypted_password: $2a$10$Tmzs3RJfEIOFv3Y24p4C6.iuh1dOwCkaI1nT3TW23wIr.VdwWyQYq
+  password_salt: $2a$10$Tmzs3RJfEIOFv3Y24p4C6.
+
+camille:
+  email: camillegarnier@me.com

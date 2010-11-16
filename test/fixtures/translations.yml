@@ -1,0 +1,10 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+english:
+  language: english
+  file_file_name: translation_1.pdf
+  display: true
+
+spanish:
+  language: spanish
+  file_file_name: translation_2.pdf
+  display: true

@@ -1,0 +1,15 @@
+%html
+  %head
+    = stylesheet_link_tag 'compiled/authentication', :cache => 'auth_all'
+    = csrf_meta_tag
+  %html
+    #page
+      #banner
+        %h1 Noelle::ADMIN
+        #notice
+          = flash[:notice]
+          = flash[:warning]
+          = flash[:error]
+
+      #content
+        = yield

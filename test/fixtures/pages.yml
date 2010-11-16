@@ -1,0 +1,19 @@
+demarche:
+  name: demarche
+  content:  la nature morte est un arrangement en train de se désagréger, c’est quelque chose en proie à la durée. ' 1
+  image_file_name: image_7.jpg
+
+actualites:
+  name: actualites
+  content: news ' content
+  image_file_name: image_7.jpg
+
+digigraphie:
+  name: digigraphie
+  content: digigraphy's content
+  image_file_name: image_7.jpg
+
+contact:
+  name: contact
+  content: Pour toutes informations concernant les photos, les tirages, les expositions à venir <br/> <a href="mailto:contact@noellemissoffe.com">contact@noellemissoffe.com</a>
+  
