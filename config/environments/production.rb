@@ -41,6 +41,12 @@ Noelle::Application.configure do
     :port      => 25
   }
 
+  config.middleware.use "::ExceptionNotifier",
+     :email_prefix => "[Noelle] ",
+     :sender_address => %{"Rails" <notifier@w3bflows.com>},
+     :exception_recipients => %w{nicolas@w3bflows.com}
+
+
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
