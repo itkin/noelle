@@ -3,3 +3,5 @@ db/*.sqlite3
 log/*.log
 tmp/**/*
 public/stylesheets/compiled/*
+.idea/**/*Â
+./**/*.DS_Store
