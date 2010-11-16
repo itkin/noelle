@@ -8,3 +8,7 @@ one:
 two:
   title: Project two
   category: one
+
+three:
+  title: Project three
+  category: two

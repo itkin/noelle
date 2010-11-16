@@ -104,7 +104,7 @@ image_15:
 
 image_16:
   description: Photo 16
-  project: two
+  project: three
   image_file_name: image_16.jpg
   title: image_16
   top: true

@@ -1,13 +1,4 @@
 - content_for :side_content do
-  %ul.categories
-    - Category.displayable.each do |category|
-      %li
-        = link_to  category_path(category) do
-          = image_tag('arrow-icon.png')
-          = category.title
-        - unless category.projects.blank?
-          %ul.projects{:style => "display:none"}
-            - category.projects.displayable.each do |project|
-              %li= link_to project.title, category_project_path(category,project)
+  = render :partial => "list"
 
 = image_tag 'categories.jpg'

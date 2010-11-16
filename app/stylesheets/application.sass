@@ -150,32 +150,43 @@ a
             text-decoration: underline
 
 
-  &.categories.index
+  &.categories
     #side_content
       margin: 7px
       background: $green
 
-    ul.categories
-      font-size: 13px
-      padding-top: 40px - 10px
-      +no-bullets
-      li
-        margin-bottom: 5px
-        padding-top: 10px
-        a
-          background: white
-          color: $green
-          padding-right: 1ex
-      ul.projects
-        margin-left: 25px
-        margin-top: 10px
+      ul.categories
+        font-size: 13px
+        padding-top: 40px - 10px
+        +no-bullets
         li
-          padding-top: 0
+          margin-bottom: 5px
+          padding-top: 10px
           a
-            color: white
-            background: $green
-            font-style: italic
-
+            background: white
+            color: $green
+            padding-right: 1ex
+        ul.projects
+          margin-left: 25px
+          margin-top: 10px
+          li
+            padding-top: 0
+            a
+              color: white
+              background: $green
+              font-style: italic
+              
+    #main_content
+      font-size: 12px
+      height: 500px
+      a#access_to_project
+        display: block
+        margin-top: 20px
+        text-align: right
+        color: $dark_grey
+        &:hover
+          text-decoration: unerline
+    
   &.projects.show
     #side_content
       margin-top: 35px - 1px

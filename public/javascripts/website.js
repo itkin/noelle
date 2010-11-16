@@ -1,4 +1,8 @@
-
+function displayProject(timer){
+  setTimeout(function(){
+    window.location = $("#access_to_project").attr('href')
+  }, timer);
+}
 
 $(function(){
 
@@ -16,15 +20,21 @@ $(function(){
 
   // Animations du menu
   $('ul.categories > li > a').toggle(function(e){
-    e.preventDefault();
-    var $ul = $(this).next('ul.projects');
-    if ($ul.length != 0)
-      $ul.slideToggle();
+    if ($(this).attr('data-description') == 'true'){
+      window.location = $(this).attr('href');
+    } else {
+      e.preventDefault();
+      var $ul = $(this).next('ul.projects');
+      if ($ul.length != 0)
+        $ul.slideToggle();
+    }
   }, function(e){
     e.preventDefault();
     var $ul = $(this).next('ul.projects');
     if ($ul.length != 0)
       $ul.slideToggle();
   });
+
+
 
 });
