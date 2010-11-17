@@ -104,13 +104,17 @@ Galleria.addTheme({
           self.exitFullscreen();
         });
 
-        $("<div id='fullscreen-info'><span class='title'></span><span class='counter'></span>").appendTo('.galleria-container');
+        $("<div id='fullscreen-info'><span class='counter'></span><span class='title'></span>").appendTo('.galleria-container');
 
         // Update caption container when a new image is shown
         this.bind(Galleria.IMAGE, function(e){
           var index = e.index + 1 + '/' + self._data.length ;
           $('#gallery_controls div.counter, #fullscreen-info span.counter').text(index);
           $('#gallery_controls h3, #fullscreen-info span.title ').text(this._data[e.index].title);
+          if ($.trim(this._data[e.index].description).length > 1)
+            $('.galleria-info').show();
+          else
+            $('.galleria-info').hide();
         });
 
 
