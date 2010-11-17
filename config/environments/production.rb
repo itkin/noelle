@@ -41,6 +41,10 @@ Noelle::Application.configure do
     :port      => 25
   }
 
+  ActiveSupport.on_load(:after_initialize) do
+    Haml::Template.options[:ugly] = false
+  end
+  
   config.middleware.use "::ExceptionNotifier",
      :email_prefix => "[Noelle] ",
      :sender_address => %{"Rails" <notifier@w3bflows.com>},
