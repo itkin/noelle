@@ -2,4 +2,4 @@
   = image_tag @page.image.url('large'), :alt => "", :title => "" unless params[:name] == 'contact'
   
 #page_content
-  = raw @page.content
+  %div= raw @page.content

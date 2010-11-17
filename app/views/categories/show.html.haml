@@ -2,7 +2,9 @@
   = render :partial => "list"
 
 #category_comment
-  = raw @category.comment
-  = link_to "Accéder au diaporama", category_project_path(@category, @category.projects.first), :id => 'access_to_project'
+  %div
+    = link_to "Accéder au diaporama", category_project_path(@category, @category.projects.first), :class => 'access_to_project top'
+    = raw @category.comment
+    = link_to "Accéder au diaporama", category_project_path(@category, @category.projects.first), :class => 'access_to_project bottom'
 
 = javascript_tag "displayProject(#{@category.timer*1000})" unless @category.timer.to_i == 0 

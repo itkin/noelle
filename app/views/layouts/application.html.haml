@@ -15,11 +15,12 @@
               Photographe
 
           %ul#menu
-            %li= link_to "les séries -", categories_path, :class => (params[:controller] == "categories" and params[:action] == 'index' ? 'selected' : nil )
-            %li= link_to "la démarche de l'artiste -", page_path(:name => Page::DEMARCHE.name)
-            %li= link_to "les actualités -", page_path(:name => Page::ACTUALITES.name)
-            %li= link_to "la digigraphie -", page_path(:name => Page::DIGIGRAPHIE.name)
-            %li= link_to "contact ", page_path(:name => Page::CONTACT.name)
+            %li= menu_link_to "accueil", root_path, true
+            %li= menu_link_to "les séries", categories_path, true
+            %li= menu_link_to "la démarche de l'artiste", page_path(:name => Page::DEMARCHE.name), true
+            %li= menu_link_to "les actualités", page_path(:name => Page::ACTUALITES.name), true
+            %li= menu_link_to "la digigraphie", page_path(:name => Page::DIGIGRAPHIE.name), true
+            %li= menu_link_to "contact ", page_path(:name => Page::CONTACT.name)
 
           = yield(:back)
 

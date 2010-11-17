@@ -1,6 +1,6 @@
 $(function(){
   // init the textarea to load with tinyMCE editor
-  $('textarea').livequery(
+  $('textarea.mce').livequery(
     function(){
       $(this).tinymce({
         mode:'textarea',

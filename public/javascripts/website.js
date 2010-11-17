@@ -1,6 +1,6 @@
 function displayProject(timer){
   setTimeout(function(){
-    window.location = $("#access_to_project").attr('href')
+    window.location = $(".access_to_project").attr('href')
   }, timer);
 }
 
