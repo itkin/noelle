@@ -1,7 +1,7 @@
 class Project < ActiveRecord::Base
 
   belongs_to :category
-  has_many :pictures
+  has_many :pictures, :dependent => :destroy
 
   order_collection_by :position, :asc, :parent => :category
 
