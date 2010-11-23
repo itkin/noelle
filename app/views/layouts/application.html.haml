@@ -4,34 +4,38 @@
     = javascript_include_tag :defaults, 'mousewheel.js', 'scrollpane.js', 'galleria/src/galleria', 'website', :cache => 'application_all'
     
     = stylesheet_link_tag 'scrollpane', 'compiled/application', :cache => 'application_all'
+
+    / [if lt IE 8]
+      = stylesheet_link_tag 'compiled/ie'
+
     
-  %body
+  %body{ :class => params[:controller] }
     #banner
-    %center
-      #page{:class => "#{params[:controller]} #{params[:action]} #{params[:name]}"}
-        #top_banner
-          %h1
-            = link_to root_path do
-              Noëlle Echiffre
-              %br/
-              Photographe
 
-          %ul#menu
-            %li= menu_link_to "accueil", root_path, true
-            %li= menu_link_to "les séries", categories_path, true
-            %li= menu_link_to "la démarche de l'artiste", page_path(:name => Page::DEMARCHE.name), true
-            %li= menu_link_to "les actualités", page_path(:name => Page::ACTUALITES.name), true
-            %li= menu_link_to "la digigraphie", page_path(:name => Page::DIGIGRAPHIE.name), true
-            %li= menu_link_to "contact ", page_path(:name => Page::CONTACT.name)
+    #page{:class => "#{params[:action]} #{params[:name]}"}
+      #top_banner
+        %h1
+          = link_to root_path do
+            Noëlle Echiffre
+            %br/
+            Photographe
 
-          = yield(:back)
+        %ul#menu
+          %li= menu_link_to "accueil", root_path, true
+          %li= menu_link_to "les séries", categories_path, true
+          %li= menu_link_to "la démarche de l'artiste", page_path(:name => Page::DEMARCHE.name), true
+          %li= menu_link_to "les actualités", page_path(:name => Page::ACTUALITES.name), true
+          %li= menu_link_to "la digigraphie", page_path(:name => Page::DIGIGRAPHIE.name), true
+          %li= menu_link_to "contact ", page_path(:name => Page::CONTACT.name)
 
-        #side_content_wrapper
-          #side_content= yield(:side_content)
-        #main_content_wrapper
-          #main_content= yield
+        = yield(:back)
 
-        #footer
-          #copyright © Copyright Noëlle Echiffre
+      #side_content_wrapper
+        #side_content= yield(:side_content)
+      #main_content_wrapper
+        #main_content= yield
 
-        #thumbs
+      #footer
+        #copyright © Copyright Noëlle Echiffre
+
+      #thumbs

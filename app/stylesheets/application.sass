@@ -29,10 +29,14 @@ $height: 514px
 //Layout
 a
   text-decoration: none
-
+  
+body
+  text-align: center
+  
 #banner
   position: absolute
   top: 150px
+  left: 0
   height: 80px
   background: $green
   width: 100%
@@ -55,15 +59,20 @@ a
   #top_banner
     +column(24, last)
     height: 115px
+    position: relative
     h1
       text-align: right
-      padding-top: 15px
-      padding-bottom: 30px
+      top: 15px
+      right: 0
+      position: absolute
       font-size: 21px
       a, a:visited
         color: $light_grey
 
     #menu
+      position: absolute
+      bottom: 5px
+      right: 0
       margin: 0
       padding: 0
       padding-left: 1ex
@@ -78,6 +87,11 @@ a
         padding: 0 0.5ex
         color: $light_grey
 
+    a.back
+      position: absolute
+      bottom: 5px
+      left: 0
+    
   #side_content_wrapper, #main_content_wrapper
     background: white
     height: $height
@@ -85,16 +99,18 @@ a
   
   #side_content_wrapper
     +column(7)
-    width: 278px
-
+    width: 277px
+            
   #main_content_wrapper
     +column(17,true)
     border-left: none
-    width: 679px
+    width: 678px
 
+        
   #side_content, #main_content
     margin: 7px
     height: $height - ( 7px * 2 ) - 2px 
+
 
   #footer
     +column(24,true)
@@ -104,69 +120,80 @@ a
 
 
 
-#page
+body
   &.pages
-    &.show
-      #side_content
-        margin: 0
-      #main_content
-        margin: 0
-        height: 100%
-        #page_content
-          font-size: 12px
+    #page
+      &.show
+        #side_content
+          margin: 0
+        #main_content
+          margin: 0
           height: 100%
-          margin-right: 10px
-          div
-            padding: 35px 140px 32px 150px
+          #page_content
+            font-size: 12px
+            height: 100%
+            margin-right: 10px
+            div
+              padding: 35px 140px 32px 150px
 
-    &.index
-      #side_content
-        color: $green
-        margin-left: 15px
-        background: white
-        height: $height - 32px
-        h2
-          margin-top: 32px
-          font-size: 14px
-          padding-left: 15px
-          text-transform: uppercase
-          background: image-url('arrow-icon.png') left center no-repeat
-        ul
-          font-size: 12px
-          +no-bullets
-          padding-left: 25px
-          a, a:visited
-            color: $green
-      .galleria-info
-        visibility: hidden
+      &.index
+        #side_content
+          color: $green
+          margin-left: 15px
+          background: white
+          height: $height - 32px
+          h2
+            margin-top: 32px
+            font-size: 14px
+            padding-left: 15px
+            text-transform: uppercase
+            background: image-url('arrow-icon.png') left center no-repeat
+          ul
+            margin: 0
+            padding: 0
+            font-size: 12px
+            +no-bullets
+            padding-left: 25px
+            a, a:visited
+              color: $green
+              line-height: 15px
+            li
+              margin: 0
+              padding: 0
 
-    &.contact
-      #side_content_wrapper, #main_content_wrapper
-        border: none
-        background: none
+        .galleria-info
+          visibility: hidden
 
-      #page_content
-        padding-top: 15px
-        color: white
-        text-align: center
-        font-family: helvatica, verdana
-        a
+      &.contact
+        #side_content_wrapper, #main_content_wrapper
+          border: none
+          background: none
+
+        #page_content
+          padding-top: 15px
           color: white
-          letter-spacing: 1px
-          &:hover
-            text-decoration: underline
-
+          text-align: center
+          font-family: helvatica, verdana
+          a
+            color: white
+            letter-spacing: 1px
+            &:hover
+              text-decoration: underline
 
   &.categories
     #side_content
       margin: 7px
       background: $green
-
       ul.categories
+        margin: 0
+        padding: 0
         font-size: 13px
         padding-top: 40px - 10px
         +no-bullets
+      
         li
+          margin: 0        
+          padding: 0        
           margin-bottom: 5px
           padding-top: 15px
           a
@@ -175,9 +202,13 @@ a
             padding: 2px 1ex 1px 0
 
         ul.projects
+          margin: 0
+          padding: 0
           margin-left: 25px
           margin-top: 10px
           li
+            margin: 0        
+            padding: 0        
             padding-top: 0
             a
               padding: 0
@@ -187,72 +218,78 @@ a
               font-style: italic
               &:hover
                 padding-left: 3px
-    &.show
-      #main_content
-        font-size: 12px
-        height: 100%
-        margin: 0
-        #category_comment
+    #page
+      &.show
+        #main_content
+          font-size: 12px
           height: 100%
-          margin-right: 10px
-          div
-            padding: 24px 140px 32px 150px
-            a.access_to_project
-              display: block
-              text-align: center
+          margin: 0
+          #category_comment
+            height: 100%
+            margin-right: 10px
+            div
+              padding: 24px 140px 32px 150px
+              a.access_to_project
+                display: block
+                text-align: center
+                color: $dark_grey
+                &:hover
+                  text-decoration: unerline
+                &.top
+                  margin-bottom: 20px
+                &.bottom
+                  margin-top: 20px
+    
+  &.projects
+    #page
+      &.show
+        #main_content
+          margin: 0
+          #gallery
+            margin: 7px
+        #side_content
+          margin: 0
+          h2
+            margin-top: 34px
+            background: $green
+            height: 80px
+            width: 280px - 2px 
+            position: relative
+            left: 1px
+            top: 0
+            div
+              margin-right: 30px  
+              text-align: right
+              font-size: 16px
+              color: white
+              &.title
+                padding-top: 18px
+                font-style: italic
+              &.sub_title
+                padding-top: 10px
+                font-size: 12px
+
+          #gallery_controls
+            margin-top: 25px
+            font-size: 13px
+            text-align: center
+            a, a:visited
               color: $dark_grey
-              &:hover
-                text-decoration: unerline
-              &.top
-                margin-bottom: 20px
-              &.bottom
-                margin-top: 20px
-      
-  &.projects.show
-    #side_content
-      margin-top: 35px - 1px
-      h2
-        background: $green
-        height: 80px
-        width: 280px - 2px 
-        position: relative
-        right: 6px
-        div
+            h3
+              height: 21px
+              line-height: 21px
+              font-size: 16px
+              font-weight: bold
+            .counter
+              height: 17px
+              padding: 8px 0 3px
+            #next
+              padding-left: 20px
+            #fullscreen
+              display: block
+              padding-top: 3px
 
-          margin-right: 30px  
-          text-align: right
-          font-size: 16px
-          color: white
-          &.title
-            padding-top: 18px
-            font-style: italic
-          &.sub_title
-            padding-top: 10px
-            font-size: 12px
-
-      #gallery_controls
-        margin-top: 25px
-        font-size: 13px
-        text-align: center
-        a, a:visited
-          color: $dark_grey
-        h3
-          height: 21px
-          line-height: 21px
-          font-size: 16px
-          font-weight: bold
-        .counter
-          height: 17px
-          padding: 8px 0 3px
-        #next
-          padding-left: 20px
-        #fullscreen
-          display: block
-          padding-top: 3px
-
-    #thumbs
-      margin-top: 30px
-      height: 67px
-      +column(24,true)
-
-
+        #thumbs
+          margin-top: 30px
+          height: 67px
+          +column(24,true)

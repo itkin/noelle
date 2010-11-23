@@ -11,7 +11,7 @@
     = link_to " plein écran", "#", :id => "fullscreen"
 
 = content_for :back do
-  = link_to categories_path do
+  = link_to categories_path, :class=> 'back' do
     = image_tag 'back.jpg'
 
 = render :partial => 'pictures/gallery', :locals => { :pictures => @project.pictures }

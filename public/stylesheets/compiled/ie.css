@@ -1,89 +1,104 @@
-/* line 7, ../../../app/stylesheets/ie.scss */
-body.bp {
+/* line 3, ../../../app/stylesheets/ie.sass */
+body {
+  text-align: center;
   text-align: center;
 }
 /* line 48, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-* html body.bp legend {
+* html body legend {
   margin: 0px -8px 16px 0;
   padding: 0;
 }
 /* line 52, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-html > body.bp p code {
+html > body p code {
   *white-space: normal;
 }
 /* line 67, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp .container {
+body .container {
   text-align: left;
 }
 /* line 69, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp sup {
+body sup {
   vertical-align: text-top;
 }
 /* line 71, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp sub {
+body sub {
   vertical-align: text-bottom;
 }
 /* line 73, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp hr {
+body hr {
   margin: -8px auto 11px;
 }
 /* line 75, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp img {
+body img {
   -ms-interpolation-mode: bicubic;
 }
 /* line 77, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp fieldset {
+body fieldset {
   padding-top: 0;
 }
 /* line 79, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp textarea {
+body textarea {
   overflow: auto;
 }
 /* line 82, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp input.text {
+body input.text {
   margin: 0.5em 0;
   background-color: white;
   border: 1px solid #bbbbbb;
 }
 /* line 86, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp input.text:focus {
+body input.text:focus {
   border: 1px solid #666666;
 }
 /* line 88, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp input.title {
+body input.title {
   margin: 0.5em 0;
   background-color: white;
   border: 1px solid #bbbbbb;
 }
 /* line 92, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp input.title:focus {
+body input.title:focus {
   border: 1px solid #666666;
 }
 /* line 94, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp input.checkbox {
+body input.checkbox {
   position: relative;
   top: 0.25em;
 }
 /* line 97, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp input.radio {
+body input.radio {
   position: relative;
   top: 0.25em;
 }
 /* line 100, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp input.button {
+body input.button {
   position: relative;
   top: 0.25em;
 }
 /* line 103, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp textarea {
+body textarea {
   margin: 0.5em 0;
 }
 /* line 105, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp select {
+body select {
   margin: 0.5em 0;
 }
 /* line 107, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp button {
+body button {
   position: relative;
   top: 0.25em;
+}
+
+/* line 7, ../../../app/stylesheets/ie.sass */
+#page #main_content_wrapper {
+  overflow: hidden;
+}
+
+/* line 14, ../../../app/stylesheets/ie.sass */
+body.projects #page.show #side_content #gallery_controls a#fullscreen {
+  display: none;
+}
+/* line 16, ../../../app/stylesheets/ie.sass */
+body.projects #page.show #thumbs {
+  display: none;
 }
