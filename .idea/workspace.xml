@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85863789-c8c6-48ec-b632-38ef0ec50352" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/stylesheets/ie.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/active_scaffold/default/date_picker_bridge.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/noelle.iml" afterPath="$PROJECT_DIR$/.idea/noelle.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/stylesheets/application.sass" afterPath="$PROJECT_DIR$/app/stylesheets/application.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/show.html.haml" afterPath="$PROJECT_DIR$/app/views/projects/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/galleria/src/themes/noelle/galleria.noelle.css" afterPath="$PROJECT_DIR$/public/javascripts/galleria/src/themes/noelle/galleria.noelle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/compiled/application.css" afterPath="$PROJECT_DIR$/public/stylesheets/compiled/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/compiled/ie.css" afterPath="$PROJECT_DIR$/public/stylesheets/compiled/ie.css" />
-    </list>
+    <list default="true" id="85863789-c8c6-48ec-b632-38ef0ec50352" name="Default" comment="" />
     <ignored path="noelle.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,7 +27,16 @@
       <file leaf-file-name="website.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/website.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="34" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
+            <state line="14" column="18" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_gallery.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/pictures/_gallery.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="2" selection-start="42" selection-end="42" vertical-scroll-proportion="0.057692308">
               <folding />
             </state>
           </provider>
@@ -47,16 +45,7 @@
       <file leaf-file-name="application.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="4" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="galleria.noelle.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/galleria/src/themes/noelle/galleria.noelle.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="21" selection-start="303" selection-end="303" vertical-scroll-proportion="0.028846154">
+            <state line="3" column="74" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,8 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/javascripts/admin.js" />
-        <option value="$PROJECT_DIR$/app/views/pictures/_gallery.html.haml" />
         <option value="$PROJECT_DIR$/app/helpers/admin/pictures_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/show.html.haml" />
         <option value="$PROJECT_DIR$/app/views/categories/show.html.haml" />
@@ -105,13 +92,15 @@
         <option value="$PROJECT_DIR$/app/views/pages/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/admin/pages/_content_form_column.html.haml" />
         <option value="$PROJECT_DIR$/app/views/layouts/admin.html.haml" />
-        <option value="$PROJECT_DIR$/app/stylesheets/application.sass" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/public/javascripts/application_all.js" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-        <option value="$PROJECT_DIR$/public/javascripts/website.js" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/public/javascripts/galleria/src/themes/noelle/galleria.noelle.css" />
+        <option value="$PROJECT_DIR$/app/stylesheets/application.sass" />
+        <option value="$PROJECT_DIR$/app/helpers/admin/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
+        <option value="$PROJECT_DIR$/public/javascripts/website.js" />
+        <option value="$PROJECT_DIR$/app/views/pictures/_gallery.html.haml" />
       </list>
     </option>
   </component>
@@ -158,6 +147,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="noelle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="noelle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="noelle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="noelle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="noelle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -381,6 +402,7 @@
     <frame x="0" y="22" width="1260" height="760" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880846" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32880846" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -393,7 +415,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880846" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880846" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -413,7 +434,7 @@
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix pb sur tinymce" />
+    <option name="LAST_COMMIT_MESSAGE" value="issues camille" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -440,26 +461,13 @@
     <MESSAGE value="pb sur tinymce j'essaye de contourner en virant le cache js" />
     <MESSAGE value="pb sur tinymce" />
     <MESSAGE value="fix pb sur tinymce" />
+    <MESSAGE value="ie7" />
+    <MESSAGE value="issues camille" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="82" selection-start="183" selection-end="183" vertical-scroll-proportion="0.07570978" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="147" selection-end="147" vertical-scroll-proportion="0.115384616" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/admin/pages_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="55" selection-end="55" vertical-scroll-proportion="0.057692308" />
@@ -490,11 +498,6 @@
         <state line="17" column="8" selection-start="329" selection-end="329" vertical-scroll-proportion="0.21256039" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/stylesheets/application.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/galleria/src/galleria.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3294" column="9" selection-start="97786" selection-end="97786" vertical-scroll-proportion="0.33333334" />
@@ -510,21 +513,51 @@
         <state line="19" column="0" selection-start="501" selection-end="501" vertical-scroll-proportion="0.5480769" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/website.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/galleria/src/themes/noelle/galleria.noelle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="34" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+        <state line="16" column="21" selection-start="303" selection-end="303" vertical-scroll-proportion="0.028846154">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/galleria/src/themes/noelle/galleria.noelle.css">
+    <entry file="file://$PROJECT_DIR$/app/helpers/admin/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="303" selection-end="303" vertical-scroll-proportion="0.028846154">
+        <state line="3" column="63" selection-start="162" selection-end="162" vertical-scroll-proportion="0.057971016">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/stylesheets/application.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="27" selection-start="1664" selection-end="1664" vertical-scroll-proportion="0.681388">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/stylesheets/partials/_base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="74" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/website.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="18" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pictures/_gallery.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="2" selection-start="42" selection-end="42" vertical-scroll-proportion="0.057692308">
           <folding />
         </state>
       </provider>

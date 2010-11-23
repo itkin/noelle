@@ -1,0 +1,18 @@
+@import "blueprint"
+
+body
+  text-align: center
+  +blueprint-ie(true)
+
+#page #main_content_wrapper  
+  overflow: hidden  
+
+body
+  &.projects
+    #page
+      &.show
+        #side_content #gallery_controls a#fullscreen
+          display: none
+        #thumbs
+          display: none
+
