@@ -1,7 +1,6 @@
 #gallery
   - pictures.each do |picture|
-    %a{ :href => picture.image.url(:thumb) }
-      = image_tag picture.image.url, :alt => picture.description, :title => picture.title
+    = image_tag picture.image.url, :alt => picture.description, :title => picture.title
 
 
 

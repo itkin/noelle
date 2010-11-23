@@ -22,7 +22,7 @@
 
         %ul#menu
           %li= menu_link_to "accueil", root_path, true
-          %li= menu_link_to "les séries", categories_path, true
+          %li= menu_link_to "les séries", categories_path, true, Proc.new{ ['categories', 'projects'].include?(params[:controller])}
           %li= menu_link_to "la démarche de l'artiste", page_path(:name => Page::DEMARCHE.name), true
           %li= menu_link_to "les actualités", page_path(:name => Page::ACTUALITES.name), true
           %li= menu_link_to "la digigraphie", page_path(:name => Page::DIGIGRAPHIE.name), true

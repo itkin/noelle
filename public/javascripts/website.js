@@ -11,6 +11,11 @@
   }
 
   $(function(){
+
+    $('img').live("mousedown","contextmenu", function(e) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+    });
     
     // Slideshow
     $('#gallery').galleria({

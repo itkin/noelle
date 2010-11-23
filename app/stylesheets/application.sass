@@ -52,6 +52,7 @@ body
   z-index: 1
   position: relative
   +container
+  width: 963px
   color: $dark_grey
   font-family: Palatino Linotype, Book Antiqua3, Palatino, serif
   text-align: left
@@ -81,7 +82,7 @@ body
       float: right
       a
         +link-colors($light_grey)
-        &.selected
+        &.selected, &:hover
           color: $light_green
       span.separator
         padding: 0 0.5ex
@@ -96,15 +97,15 @@ body
     background: white
     height: $height
     border: 1px solid black
+    float: left
+    postion: relative
   
   #side_content_wrapper
-    +column(7)
-    width: 277px
+    width: 278px
             
   #main_content_wrapper
-    +column(17,true)
     border-left: none
-    width: 678px
+    width: 679px
 
         
   #side_content, #main_content
@@ -276,7 +277,7 @@ body
             a, a:visited
               color: $dark_grey
             h3
-              height: 21px
+              min-height: 21px
               line-height: 21px
               font-size: 16px
               font-weight: bold
