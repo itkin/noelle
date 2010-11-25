@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
   def index
-    @pictures = Picture.top
+    @pictures = Picture.top.shuffle
     @translations = Translation.displayable    
   end
 

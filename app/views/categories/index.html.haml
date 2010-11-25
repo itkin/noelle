@@ -1,4 +1,4 @@
 - content_for :side_content do
   = render :partial => "list"
 
-= image_tag 'categories.jpg'
+= render :partial => 'pictures/gallery', :locals => { :pictures => @pictures }

@@ -2,7 +2,7 @@ class Admin::ApplicationController < ApplicationController
   before_filter :authenticate_user!
 
   layout :layout_by_type
-
+  
   def layout_by_type
     if request.xhr?
       nil
