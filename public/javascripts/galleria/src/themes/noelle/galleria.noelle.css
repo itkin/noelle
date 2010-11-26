@@ -235,10 +235,18 @@
   margin-left: 30px;
   margin-right: 30px;
 }
+.galleria-container.fullscreen .galleria-thumbnails{
+  margin:0 auto;
+}
 
 .galleria-container.fullscreen #fullscreen-info{
   display:block;
 }
 .galleria-container.fullscreen #exit-fullscreen{
   display:block;
+}
+.galleria-container.fullscreen .galleria-info{
+  bottom:110px;
+  right: 100px;
+  left: auto;
 }
