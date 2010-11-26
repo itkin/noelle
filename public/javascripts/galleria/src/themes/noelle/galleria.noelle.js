@@ -70,7 +70,7 @@ Galleria.addTheme({
                 this.$('loader').show().fadeTo(200, .4);
             }
             
-            this.$('info').toggle( this.hasInfo() );
+            
             
             $(e.thumbTarget).css('opacity',1).parent().siblings().children().css('opacity',.6);
         });
@@ -107,7 +107,7 @@ Galleria.addTheme({
         $("<div id='fullscreen-info'><span class='counter'></span><span class='title'></span>").appendTo('.galleria-container');
 
         // Update caption container when a new image is shown
-        this.bind(Galleria.IMAGE, function(e){
+        this.bind(Galleria.LOADSTART, function(e){
           var index = e.index + 1 + '/' + self._data.length ;
           $('#gallery_controls div.counter, #fullscreen-info span.counter').text(index);
           $('#gallery_controls h3, #fullscreen-info span.title ').text(this._data[e.index].title);
