@@ -7,7 +7,7 @@
 
 .galleria-container {
     position: relative;
-    background: white;
+    background: none;
 }
 .galleria-thumbnails-container {
     position: absolute;

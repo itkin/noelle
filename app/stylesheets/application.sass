@@ -20,6 +20,7 @@
 
 
 $back: #E0E5E4
+$inner_back: white
 $dark_grey: #666666
 $light_grey: #999999
 $green: #333300
@@ -36,7 +37,7 @@ body
   
 #banner
   position: absolute
-  top: 150px
+  top: 120px
   left: 0
   height: 80px
   background: $green
@@ -60,7 +61,7 @@ body
 
   #top_banner
     +column(24, last)
-    height: 115px
+    height: 85px
     position: relative
     h1
       text-align: right
@@ -69,8 +70,9 @@ body
       position: absolute
       font-size: 21px
       a, a:visited
-        color: $light_grey
-
+        color: $dark_grey
+        span
+          color: $light_grey
     #menu
       position: absolute
       bottom: 5px
@@ -93,9 +95,17 @@ body
       position: absolute
       bottom: 5px
       left: 0
+      height: 10px
+      width: 21px
+      background: image-url('back.png') left top no-repeat
+      zoom: 1
+      _background: none
+      _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/back.png", sizingMethod="image")
+      cursor: pointer
+
     
   #side_content_wrapper, #main_content_wrapper
-    background: $back
+    background: $inner_back
     height: $height
     border: 1px solid black
     float: left
@@ -143,7 +153,7 @@ body
         #side_content
           color: $green
           margin-left: 15px
-          background: $back
+          background: $inner_back
           height: $height - 32px
           h2
             margin-top: 32px
@@ -174,11 +184,11 @@ body
 
         #page_content
           padding-top: 15px
-          color: $back
+          color: $inner_back
           text-align: center
           font-family: helvatica, verdana
           a
-            color: $back
+            color: $inner_back
             letter-spacing: 1px
             &:hover
               text-decoration: underline
@@ -200,7 +210,7 @@ body
           margin-bottom: 5px
           padding-top: 15px
           a
-            background: $back
+            background: $inner_back
             color: $green
             padding: 2px 1ex 1px 0
 
@@ -216,7 +226,7 @@ body
             a
               padding: 0
               padding-right: 1ex
-              color: $back
+              color: $inner_back
               background: $green
               font-style: italic
               &:hover
@@ -269,7 +279,7 @@ body
               margin-right: 30px  
               text-align: right
               font-size: 16px
-              color: $back
+              color: $inner_back
               &.title
                 padding-top: 18px
                 font-style: italic
