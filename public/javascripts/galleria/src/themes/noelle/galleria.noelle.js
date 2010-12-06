@@ -16,8 +16,9 @@ Galleria.addTheme({
     defaults: {
         transition: 'slide',
         thumb_crop: 'height',
-        autoplay: true,
+        autoplay: 7000,
         show_counter: false,
+        pause_on_interaction: false,
         
 		// set this to false if you want to show the caption all the time:
         _toggle_info: true

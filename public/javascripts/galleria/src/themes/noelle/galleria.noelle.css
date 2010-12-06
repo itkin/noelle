@@ -133,12 +133,12 @@
     position: absolute;
     left: 10px;
     z-index: 2;
-    background-position: 0 46px;
+    background: url(/images/arrow-left.png) left center no-repeat;
 }
 .galleria-image-nav-right {
     left: auto;
     right: 10px;
-    background-position: -254px 46px;
+    background: url(/images/arrow-right.png) right center no-repeat;
     z-index: 2;
 }
 .galleria-image-nav-left:hover,
@@ -188,9 +188,7 @@
 }
 
 .galleria-info-link,
-.galleria-info-close,
-.galleria-image-nav-left,
-.galleria-image-nav-right {
+.galleria-info-close {
     background-image: url(classic-map.png);
     background-repeat: no-repeat;
 }
