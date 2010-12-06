@@ -19,7 +19,7 @@
 @import "compass/utilities/lists/bullets"
 
 
-
+$back: #E0E5E4
 $dark_grey: #666666
 $light_grey: #999999
 $green: #333300
@@ -32,6 +32,7 @@ a
   
 body
   text-align: center
+  background: $back
   
 #banner
   position: absolute
@@ -94,7 +95,7 @@ body
       left: 0
     
   #side_content_wrapper, #main_content_wrapper
-    background: white
+    background: $back
     height: $height
     border: 1px solid black
     float: left
@@ -142,7 +143,7 @@ body
         #side_content
           color: $green
           margin-left: 15px
-          background: white
+          background: $back
           height: $height - 32px
           h2
             margin-top: 32px
@@ -173,11 +174,11 @@ body
 
         #page_content
           padding-top: 15px
-          color: white
+          color: $back
           text-align: center
           font-family: helvatica, verdana
           a
-            color: white
+            color: $back
             letter-spacing: 1px
             &:hover
               text-decoration: underline
@@ -199,7 +200,7 @@ body
           margin-bottom: 5px
           padding-top: 15px
           a
-            background: white
+            background: $back
             color: $green
             padding: 2px 1ex 1px 0
 
@@ -211,11 +212,11 @@ body
           li
             margin: 0        
             padding: 0        
-            padding-top: 0
+            padding-bottom: 5px
             a
               padding: 0
               padding-right: 1ex
-              color: white
+              color: $back
               background: $green
               font-style: italic
               &:hover
@@ -268,7 +269,7 @@ body
               margin-right: 30px  
               text-align: right
               font-size: 16px
-              color: white
+              color: $back
               &.title
                 padding-top: 18px
                 font-style: italic
