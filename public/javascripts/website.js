@@ -1,14 +1,14 @@
 //Website application
 
+function displayProject(timer){
+  setTimeout(function(){
+    window.location = $(".access_to_project").attr('href')
+  }, timer);
+}
+
 (function($){
   
   Galleria.loadTheme('/javascripts/galleria/src/themes/noelle/galleria.noelle.js');
-
-  function displayProject(timer){
-    setTimeout(function(){
-      window.location = $(".access_to_project").attr('href')
-    }, timer);
-  }
 
   $(function(){
 
