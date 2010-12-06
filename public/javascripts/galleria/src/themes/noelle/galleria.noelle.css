@@ -9,6 +9,7 @@
     position: relative;
     background: none;
 }
+
 .galleria-thumbnails-container {
     position: absolute;
     width: 960px;
@@ -213,11 +214,18 @@
   top:20px;
   height:13px;
   width:22px;
-  background:url(/images/back.jpg) left top no-repeat;
+  background:url(/images/back.png) left top no-repeat;
+  cursor: pointer;
+  zoom: 1
+  _background: none;
+  _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/back.png", sizingMethod="image");
   cursor: pointer;
 }
 /*FULLSCREEN*/
 
+.galleria-container.fullscreen {
+  background: #E0E5E4
+}
 .galleria-container.fullscreen .galleria-stage {
   top: 20px;
   bottom: 140px;
