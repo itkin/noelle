@@ -148,6 +148,21 @@ body
             div
               padding: 35px 140px 32px 150px
               text-align: justify
+              img.attached_picture
+                float: left
+                margin-right: 10px
+                margin-bottom: 10px
+              a.attached_document
+                margin-top: 20px
+                display: block
+                clear: left
+                padding-left: 20px
+                background: image-url('pdf.png') left top no-repeat
+                line-height: 18px
+                &.pdf
+                  background: image-url('pdf.png') left top no-repeat
+                &.img
+                  background: image-url('gif.png') left top no-repeat
 
       &.index
         #side_content
@@ -177,22 +192,6 @@ body
         .galleria-info
           visibility: hidden
 
-      &.contact
-        #side_content_wrapper, #main_content_wrapper
-          border: none
-          background: none
-
-        #main_content #page_content 
-          padding-top: 15px
-          color: $inner_back
-          font-family: helvatica, verdana
-          div
-            text-align: center
-            a
-              color: $inner_back
-              letter-spacing: 1px
-              &:hover
-                text-decoration: underline
 
   &.categories
     #side_content

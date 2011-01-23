@@ -4,4 +4,8 @@ class Page < ActiveRecord::Base
 
   has_attached_file :image, :styles => { :small => "30x30!", :large => "277x513!" }
 
+  has_attached_file :picture, :styles => { :small => "30x30!", :large => "x60>"}
+
+  has_attached_file :document
+
 end

@@ -2,4 +2,7 @@
   = image_tag @page.image.url('large'), :alt => "", :title => "" unless params[:name] == 'contact'
   
 #page_content
-  %div= raw @page.content
+  %div
+    = image_tag @page.picture.url(:large), :class => 'attached_picture' if @page.picture?
+    = raw @page.content
+    = link_to @page.document.original_filename, @page.document.url, :alt => "Download #{@page.document.original_filename}", :target => '_blank', :class => "attached_document #{@page.document.content_type.match(/pdf/) ? 'pdf' : 'img'}" if @page.document?

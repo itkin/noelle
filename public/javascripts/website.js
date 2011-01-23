@@ -19,6 +19,7 @@ function displayProject(timer){
     
     // Slideshow
     $('#gallery').galleria({
+      autoplay: 5000,
       width: 666,
       height: 500,
       counter: false
