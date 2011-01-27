@@ -23,10 +23,10 @@ Devise.setup do |config|
   # config.authentication_keys = [ :email ]
 
   # Tell if authentication.html.haml through request.params is enabled. True by default.
-  # config.params_authenticatable = true
+   config.params_authenticatable = false
 
   # Tell if authentication.html.haml through HTTP Basic Auth is enabled. True by default.
-   config.http_authenticatable = false
+    config.http_authenticatable = false
 
   # Set this to true to use Basic Auth for AJAX requests.  True by default.
   # config.http_authenticatable_on_xhr = true
