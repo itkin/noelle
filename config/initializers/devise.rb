@@ -23,7 +23,7 @@ Devise.setup do |config|
   # config.authentication_keys = [ :email ]
 
   # Tell if authentication.html.haml through request.params is enabled. True by default.
-   config.params_authenticatable = false
+#   config.params_authenticatable = false
 
   # Tell if authentication.html.haml through HTTP Basic Auth is enabled. True by default.
     config.http_authenticatable = false
