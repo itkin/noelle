@@ -7,6 +7,7 @@ class PagesController < ApplicationController
 
   def show
     @page = Page.find_by_name(params[:name])
+    redirect_to root_path unless @page
   end
   
 end
