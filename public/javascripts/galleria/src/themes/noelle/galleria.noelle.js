@@ -93,6 +93,19 @@ Galleria.addTheme({
           e.preventDefault();
           self.next();
         });
+        // play toggle
+        $('#play_toggle').bind('click',function(e){
+          e.preventDefault();
+          if ( self._playing ){
+            $(this).text('play');
+            self.pause()
+          }
+          else {
+            $(this).text('pause');
+            self.play();
+          }
+        }); 
+
 
         // bind fullscreen link
         $('#fullscreen').bind('click',function(e){
