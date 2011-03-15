@@ -30,6 +30,9 @@ $height: 514px
 //Layout
 a
   text-decoration: none
+  &:focus 
+    outline: none
+  
   
 body
   text-align: center
@@ -301,11 +304,13 @@ body
             .counter
               height: 17px
               padding: 8px 0 3px
+            #play_toggle
+              padding: 0 10px
             #next
-              padding-left: 20px
+              margin-right: 1.1em
             #fullscreen
               display: block
-              padding-top: 3px
+              padding-top: 0.5em
 
         #thumbs
           margin-top: 30px
