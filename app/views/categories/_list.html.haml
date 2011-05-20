@@ -4,7 +4,7 @@
       = link_to category_path(category), 'data-comment' => !category.comment.blank? do
         = image_tag('arrow-icon.png')
         = category.title
-      - if category.comment.blank? and not category.projects.blank?
-        %ul.projects{:style => "display:none"}
+      - unless category.projects.displayable.blank?
+        %ul.projects{:style => "display:none" }
           - category.projects.displayable.each do |project|
             %li= link_to project.title, category_project_path(category,project)

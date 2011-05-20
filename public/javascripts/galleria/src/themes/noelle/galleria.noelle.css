@@ -91,7 +91,7 @@
 }
 .galleria-info-description {
     font: normal 12px/1.4 helvatica, arial ;
-    margin-top: 10px;
+    padding-top: 20px;
     color: #bbb;
     white-space: pre-wrap;
     white-space: pre-line;
