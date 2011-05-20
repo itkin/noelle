@@ -5,3 +5,4 @@ tmp/**/*
 public/stylesheets/compiled/*
 .idea/**/*Â
 ./**/*.DS_Store
+public/system

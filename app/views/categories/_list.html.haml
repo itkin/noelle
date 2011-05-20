@@ -5,6 +5,7 @@
         = image_tag('arrow-icon.png')
         = category.title
       - unless category.projects.displayable.blank?
-        %ul.projects{:style => "display:none" }
+
+        %ul.projects{:style => params[:id] != category.id.to_s ? "display:none" : ''}
           - category.projects.displayable.each do |project|
             %li= link_to project.title, category_project_path(category,project)

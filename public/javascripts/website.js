@@ -36,9 +36,7 @@ function displayProject(timer){
         window.location = $(this).attr('href');
       } else {
         e.preventDefault();
-        var $ul = $(this).next('ul.projects');
-        if ($ul.length != 0)
-          $ul.slideToggle();
+        $(this).closest('.categories').find('ul.projects:visible').not($(this).next('ul.projects').slideToggle()).slideToggle();
       }
     }, function(e){
       e.preventDefault();
