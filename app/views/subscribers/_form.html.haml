@@ -1,0 +1,14 @@
+= form_for subscriber, :remote => true do |f|
+  %p Abonnez-vous à notre newsletter
+
+  - if f.object.errors[:email].include?("has already been taken")
+    %p.error Cet email est déjà abonné
+
+  .field{:class => f.object.errors[:name].blank? ? '' : 'error' }
+    %label Nom :
+    = f.text_field(:name, :autocomplete => 'off')
+  .field{:class => f.object.errors[:email].blank? ? '' : 'error' }
+    %label Email :
+    = f.text_field(:email, :autocomplete => 'off')
+  .field.buttons
+    = f.submit 'envoyer'

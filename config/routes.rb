@@ -22,12 +22,17 @@ Noelle::Application.routes.draw do
     resources :users do
       as_routes
     end
+    resources :subscribers do
+      as_routes
+    end
     root :to => "pages#index"
   end
 
   resources :categories, :only => [:index, :show] do
     resources :projects, :only => [:show]
   end
+
+  resources :subscribers, :only => :create
 
 #  resources :pages, :only => :show
   match ':name' => 'pages#show', :as => :page

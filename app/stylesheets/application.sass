@@ -173,6 +173,7 @@ body
           margin-left: 15px
           background: $inner_back
           height: $height - 32px
+          position: relative
           h2
             margin-top: 32px
             font-size: 14px
@@ -192,8 +193,44 @@ body
               margin: 0
               padding: 0
 
-        .galleria-info
-          visibility: hidden
+          form#new_subscriber
+            font-size: 14px
+            background: #f3f5f4
+            border: 1px solid #adad99
+            padding: 10px 15px
+            position: absolute
+            bottom: 80px
+            margin-left: 13px
+            margin-right: 20px
+            p
+              padding: 0
+              &.error
+                color: red
+              &.subscribed
+                font-style: italic
+                font-wieght: bold
+                text-align: center
+
+            .field
+              clear: right
+              padding: 10px 0
+              label
+                position: relative
+                top: 0.4em
+              input
+                float: right
+                &#subscriber_email, &#subscriber_name
+                  width: 140px
+              &.error
+                color: red
+                input
+                  border-color: red
+
+                div.field_with_errors
+                  display: inline
+
+          .galleria-info
+            visibility: hidden
 
 
   &.categories

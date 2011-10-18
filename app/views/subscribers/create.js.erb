@@ -1,0 +1,4 @@
+$("<%= escape_javascript(render :partial => 'subscribers/form', :locals => {:subscriber => Subscriber.new }) %>")
+  .replaceAll('#new_subscriber')
+  .effect('highlight')
+  .find('p').after('<p class="subscribed">Merci, <%= @subscriber.email %> est maintenant abonné</p>')
