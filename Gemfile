@@ -19,7 +19,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 gem "haml"
 gem "compass"
 gem "jquery-rails"
-gem "devise"
+gem "devise", "1.1.3"
 gem "paperclip"
 
 
