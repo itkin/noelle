@@ -25,13 +25,16 @@ Noelle::Application.routes.draw do
     resources :subscribers do
       as_routes
     end
+    resources :images do
+      as_routes
+    end
     root :to => "pages#index"
   end
 
   resources :categories, :only => [:index, :show] do
     resources :projects, :only => [:show]
   end
-
+  resources :attachments, :only => :show
   resources :subscribers, :only => :create
 
 #  resources :pages, :only => :show

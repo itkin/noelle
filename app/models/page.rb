@@ -10,4 +10,5 @@ class Page < ActiveRecord::Base
 
   has_attached_file :document_2
 
+
 end

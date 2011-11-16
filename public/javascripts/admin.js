@@ -5,8 +5,8 @@ $(function(){
       $(this).tinymce({
         mode:'textarea',
         theme : "advanced",
-        plugins : "advlink, paste",
-        theme_advanced_buttons1: "bold,italic,underline,|,undo,redo,|,link,unlink,|, pastetext, pasteword, removeformat",
+        plugins : "advlink, paste, advimage",
+        theme_advanced_buttons1: "bold,italic,underline,|,undo,redo,|,link,unlink,image,|,justifyleft,justifycenter,justifyright,justifyfull,|, pastetext, pasteword, removeformat",
         theme_advanced_buttons2: '',
         theme_advanced_buttons3: '',
         theme_advanced_buttons4: '',
