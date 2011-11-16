@@ -6,7 +6,7 @@ public/stylesheets/compiled/*
 .idea/**/*Â
 ./**/*.DS_Store
 public/system
-	public/javascripts/application_all.js
-	public/stylesheets/admin_all.css
-	public/stylesheets/application_all.css
-	public/stylesheets/auth_all.cs
+public/javascripts/application_all.js
+public/stylesheets/admin_all.css
+public/stylesheets/application_all.css
+public/stylesheets/auth_all.cs
