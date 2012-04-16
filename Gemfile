@@ -1,7 +1,8 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.2.3'
-gem 'mysql'
+gem 'mysql2'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
