@@ -55,7 +55,7 @@ Devise.setup do |config|
   # It can be set to an array that will enable http authentication only for the
   # given strategies, for example, `config.http_authenticatable = [:token]` will
   # enable it only for token authentication.
-   config.http_authenticatable = true
+   config.http_authenticatable = false
 
   # If http headers should be returned for AJAX requests. True by default.
   # config.http_authenticatable_on_xhr = true
@@ -85,7 +85,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = "cf51527dc6bc941b54dd8a79573851f4413514416e3a4e9c8a5076abd95a3c38ed48d783d2aeaca4e855768f87198a3bc8a31becb0ccef4b2da4a02854c7de74"
+  config.pepper = "e986f64146d1d89b5c4c86913c78aa1bfb7aa904367d7978a407632f2e9b7f4247fd5e0abf95d198913ef1dac0b4aaf1f7ffd6667c0db66fc6361a0cd9ab6d0a"
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -99,7 +99,7 @@ Devise.setup do |config|
   # initial account confirmation) to be applied. Requires additional unconfirmed_email
   # db field (see migrations). Until confirmed new email is stored in
   # unconfirmed email column, and copied to email column on successful confirmation.
-  config.reconfirmable = true
+  #config.reconfirmable = true
 
   # Defines which key will be used when confirming an account
   # config.confirmation_keys = [ :email ]
