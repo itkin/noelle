@@ -21,7 +21,7 @@ $(function(){
 
 
   $('form.as_form').livequery(function(){
-      $(this).find('textarea.contents-input').each(function(index, elem) {
+      $(this).find('textarea.mce').each(function(index, elem) {
         tinyMCE.execCommand('mceAddControl', false, $(elem).attr('id'));
       });
       $(this).bind('submit.tinymce', function(e){
@@ -30,7 +30,7 @@ $(function(){
 
 
   }, function(){
-      var textarea = $(this).unbind('submit.tinymce').find('textarea.contents-input');
+      var textarea = $(this).unbind('submit.tinymce').find('textarea.mce');
       if (textarea.length){
         textarea.tinymce().destroy();
         textarea.tinymce().remove();
