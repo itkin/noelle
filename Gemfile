@@ -30,9 +30,9 @@ gem 'sprockets'
 
 gem 'memcache-client'
 gem 'sass-rails' # if running rails 3.1 or greater
-gem 'compass-rails'
 
 group :assets do
+  gem 'compass-rails'
   gem 'uglifier'
   gem 'execjs'
   gem 'therubyracer'
