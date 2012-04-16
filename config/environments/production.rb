@@ -52,7 +52,7 @@ Noelle::Application.configure do
 
 
   config.assets.compress = false
-  config.assets.compile = false
+  config.assets.compile = true
   config.assets.digest = true
 
   # Remeber to set _Expires_ at webserver level since we don't do it at Rails level
