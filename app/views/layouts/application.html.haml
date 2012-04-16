@@ -1,5 +1,5 @@
-!!!
 !!! XML
+!!!
 %html
   %head
 
@@ -8,7 +8,8 @@
     -#= javascript_include_tag 'jquery.min', 'mousewheel.js', 'scrollpane.js', 'galleria/src/galleria', 'rails_jquery', 'jquery.effects.core', 'jquery.effects.highlight', 'website', :cache => 'application_all'
     
     = stylesheet_link_tag 'scrollpane', 'application'
-    %meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+    %meta{ "http-equiv" => "content-type", :content => "text/html;charset=UTF-8" }
+
     / [if lt IE 8]
       = stylesheet_link_tag 'compiled/ie'
 
