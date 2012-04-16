@@ -19,7 +19,8 @@ test:
   socket: /tmp/mysql.sock
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000
+  adapter: mysql
+  database: noelle_prod
+  password: rails
+  username: rails
+  socket: /tmp/mysql.sock

@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.10'
+gem 'rails', '3.2.3'
 gem 'mysql'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -17,12 +17,21 @@ gem 'mysql'
  gem 'ruby-debug'
 
 gem "haml"
-gem "compass"
 gem "jquery-rails"
-gem "devise", "1.1.3"
-gem "paperclip"
+gem "devise"
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+#gem "active_scaffold_vho", "~> 3.1.3"
+gem "active_scaffold"
+gem "exception_notification"
+gem 'tinymce-rails'
 
-
+group :assets do
+  gem 'sass-rails' # if running rails 3.1 or greater
+  gem 'compass-rails'
+  gem 'uglifier'
+  gem 'execjs'
+  gem 'therubyracer'
+end
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'

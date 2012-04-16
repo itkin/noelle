@@ -5,5 +5,5 @@ class Project < ActiveRecord::Base
 
   order_collection_by :position, :asc, :parent => :category
 
-  named_scope :displayable, where(:display => true)
+  scope :displayable, where(:display => true)
 end

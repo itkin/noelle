@@ -41,9 +41,9 @@ Noelle::Application.configure do
     :port      => 25
   }
 
-  ActiveSupport.on_load(:after_initialize) do
-    Haml::Template.options[:ugly] = false
-  end
+  #ActiveSupport.on_load(:after_initialize) do
+  #  Haml::Template.options[:ugly] = false
+  #end
   
   config.middleware.use "::ExceptionNotifier",
      :email_prefix => "[Noelle] ",
@@ -51,6 +51,14 @@ Noelle::Application.configure do
      :exception_recipients => %w{nicolas@w3bflows.com}
 
 
+  config.assets.compress = false
+  config.assets.compile = false
+  config.assets.digest = true
+
+  # Remeber to set _Expires_ at webserver level since we don't do it at Rails level
+  config.serve_static_assets = false
+
+  config.assets.precompile += %w{admin.js admin.css galleria/src/themes/noelle/galleria.noelle.js}
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false

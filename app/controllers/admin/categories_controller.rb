@@ -1,6 +1,6 @@
 class Admin::CategoriesController < Admin::ApplicationController
 
-  active_scaffold :categories do |config|
+  active_scaffold :category do |config|
     config.columns = :display, :position, :timer, :title, :comment, :projects
     config.list.columns = :display, :position, :title, :timer, :projects
     config.update.columns  = config.create.columns = :display, :position, :timer, :title, :comment

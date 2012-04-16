@@ -1,0 +1,358 @@
+//= require galleria/src/themes/noelle/galleria.noelle
+
+// This import applies a global reset to any page that imports this stylesheet.
+@import "compass/reset"
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint"
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base"
+//@import "partials/form";
+//@import "partials/two_col";
+
+@import "blueprint/grid"
+
+// Combine the partials into a single screen stylesheet.
+//@import "partials/page";
+
+@import "compass/utilities/lists/inline-list"
+@import "compass/utilities/links/link-colors"
+@import "compass/utilities/lists/bullets"
+
+
+$back: #E0E5E4
+$inner_back: white
+$dark_grey: #666666
+$light_grey: #999999
+$green: #333300
+$light_green: #333300
+$height: 514px
+
+//Layout
+a
+  text-decoration: none
+  &:focus 
+    outline: none
+  
+  
+body
+  text-align: center
+  background: $back
+  
+#banner
+  position: absolute
+  top: 120px
+  left: 0
+  height: 80px
+  background: $green
+  width: 100%
+  z-index: 0
+
+.jScrollPaneDrag
+  background: $green
+.jScrollPaneTrack
+  background: image-url('jScrollPaneTrack.jpg') center top repeat-y
+
+ 
+#page
+  z-index: 1
+  position: relative
+  +container
+  width: 963px
+  color: $dark_grey
+  font-family: Palatino Linotype, Book Antiqua3, Palatino, serif
+  text-align: left
+
+  #top_banner
+    +column(24, last)
+    height: 85px
+    position: relative
+    h1
+      text-align: right
+      top: 15px
+      right: 0
+      position: absolute
+      font-size: 21px
+      a, a:visited
+        color: $dark_grey
+        span
+          color: $light_grey
+    #menu
+      position: absolute
+      bottom: 5px
+      right: 0
+      margin: 0
+      padding: 0
+      padding-left: 1ex
+      font-size: 14px
+      +inline-list
+      float: right
+      a
+        +link-colors($light_grey)
+        &.selected, &:hover
+          color: $light_green
+      span.separator
+        padding: 0 0.5ex
+        color: $light_grey
+
+    a.back
+      position: absolute
+      bottom: 5px
+      left: 0
+      height: 10px
+      width: 21px
+      background: image-url('back.png') left top no-repeat
+      zoom: 1
+      _background: none
+      _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/back.png", sizingMethod="image")
+      cursor: pointer
+
+    
+  #side_content_wrapper, #main_content_wrapper
+    background: $inner_back
+    height: $height
+    border: 1px solid black
+    float: left
+    postion: relative
+  
+  #side_content_wrapper
+    width: 278px
+            
+  #main_content_wrapper
+    border-left: none
+    width: 679px
+
+        
+  #side_content, #main_content
+    margin: 7px
+    height: $height - ( 7px * 2 ) - 2px 
+
+
+  #footer
+    +column(24,true)
+    text-align: right
+    font-size: 10px
+    margin-top: 3px
+
+
+
+body
+  &.pages
+    #page
+      &.show
+        #side_content
+          margin: 0
+        #main_content
+          margin: 0
+          height: 100%
+          #page_content
+            font-size: 12px
+            height: 100%
+            margin-right: 10px
+            > div
+              padding: 35px 140px 32px 150px
+              text-align: justify
+              img.attached_picture
+                float: left
+                margin-right: 10px
+                margin-bottom: 10px
+              a.attached_document
+                margin-top: 20px
+                display: block
+                clear: left
+                padding-left: 20px
+                background: image-url('pdf.png') left top no-repeat
+                line-height: 18px
+                &.pdf
+                  background: image-url('pdf.png') left top no-repeat
+                &.img
+                  background: image-url('gif.png') left top no-repeat
+
+      &.index
+        .galleria-info
+          visibility: hidden
+
+        #side_content
+          color: $green
+          margin-left: 15px
+          background: $inner_back
+          height: $height - 32px
+          position: relative
+          h2
+            margin-top: 32px
+            font-size: 14px
+            padding-left: 15px
+            text-transform: uppercase
+            background: image-url('arrow-icon.png') left center no-repeat
+          ul
+            margin: 0
+            padding: 0
+            font-size: 12px
+            +no-bullets
+            padding-left: 25px
+            a, a:visited
+              color: $green
+              line-height: 15px
+            li
+              margin: 0
+              padding: 0
+
+          form#new_subscriber
+            font-size: 14px
+            background: #f3f5f4
+            border: 1px solid #adad99
+            padding: 10px 15px
+            position: absolute
+            bottom: 80px
+            margin-left: 13px
+            margin-right: 20px
+            p
+              padding: 0
+              &.error
+                color: red
+              &.subscribed
+                font-style: italic
+                font-wieght: bold
+                text-align: center
+
+            .field
+              clear: right
+              padding: 10px 0
+              label
+                position: relative
+                top: 0.4em
+              input
+                float: right
+                &#subscriber_email, &#subscriber_name
+                  width: 140px
+              &.error
+                color: red
+                input
+                  border-color: red
+
+                div.field_with_errors
+                  display: inline
+
+
+
+  &.categories
+    #side_content
+      margin: 7px
+      background: $green
+      ul.categories
+        margin: 0
+        padding: 0
+        font-size: 13px
+        padding-top: 40px - 10px
+        +no-bullets
+      
+        li
+          margin: 0        
+          padding: 0        
+          margin-bottom: 5px
+          padding-top: 15px
+          a
+            background: $inner_back
+            color: $green
+            padding: 2px 1ex 1px 0
+
+        ul.projects
+          margin: 0
+          padding: 0
+          margin-left: 25px
+          margin-top: 10px
+          li
+            margin: 0        
+            padding: 0        
+            padding-bottom: 5px
+            a
+              padding: 0
+              padding-right: 1ex
+              color: $inner_back
+              background: $green
+              font-style: italic
+              &:hover
+                padding-left: 3px
+
+    .galleria-info
+      visibility: hidden
+                
+    #page
+      &.show
+        #main_content
+          font-size: 12px
+          height: 100%
+          margin: 0
+          #category_comment
+            height: 100%
+            margin-right: 10px
+            div
+              padding: 24px 140px 32px 150px
+              text-align: justify
+              a.access_to_project
+                display: block
+                text-align: center
+                color: $dark_grey
+                &:hover
+                  text-decoration: unerline
+                &.top
+                  margin-bottom: 20px
+                &.bottom
+                  margin-top: 20px
+    
+  &.projects
+    #page
+      &.show
+        #main_content
+          margin: 0
+          #gallery
+            margin: 7px
+        #side_content
+          margin: 0
+          h2
+            margin-top: 34px
+            background: $green
+            height: 80px
+            width: 280px - 2px 
+            position: relative
+            left: 1px
+            top: 0
+            div
+              margin-right: 30px  
+              text-align: right
+              font-size: 16px
+              color: $inner_back
+              &.title
+                padding-top: 18px
+                font-style: italic
+              &.sub_title
+                padding-top: 10px
+                font-size: 12px
+
+          #gallery_controls
+            margin-top: 25px
+            font-size: 13px
+            text-align: center
+            a, a:visited
+              color: $dark_grey
+            h3
+              min-height: 21px
+              line-height: 21px
+              font-size: 16px
+              font-weight: bold
+            .counter
+              height: 17px
+              padding: 8px 0 3px
+            #play_toggle
+              padding: 0 10px
+            #next
+              margin-right: 1.1em
+            #fullscreen
+              display: block
+              padding-top: 0.5em
+
+        #thumbs
+          margin-top: 30px
+          height: 67px
+          +column(24,true)

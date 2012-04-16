@@ -14,7 +14,7 @@ Devise.setup do |config|
   # available as additional gems.
   require 'devise/orm/active_record'
 
-  # ==> Configuration for any authentication.html.haml mechanism
+  # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating an user. By default is
   # just :email. You can configure it to use [:username, :subdomain], so for
   # authenticating an user, both parameters are required. Remember that those
@@ -22,11 +22,11 @@ Devise.setup do |config|
   # session. If you need permissions, you should implement that in a before filter.
   # config.authentication_keys = [ :email ]
 
-  # Tell if authentication.html.haml through request.params is enabled. True by default.
-#   config.params_authenticatable = false
+  # Tell if authentication through request.params is enabled. True by default.
+  # config.params_authenticatable = true
 
-  # Tell if authentication.html.haml through HTTP Basic Auth is enabled. True by default.
-    config.http_authenticatable = false
+  # Tell if authentication through HTTP Basic Auth is enabled. False by default.
+  # config.http_authenticatable = false
 
   # Set this to true to use Basic Auth for AJAX requests.  True by default.
   # config.http_authenticatable_on_xhr = true
@@ -40,13 +40,13 @@ Devise.setup do |config|
   config.stretches = 10
 
   # Define which will be the encryption algorithm. Devise also supports encryptors
-  # from others authentication.html.haml tools as :clearance_sha1, :authlogic_sha512 (then
+  # from others authentication tools as :clearance_sha1, :authlogic_sha512 (then
   # you should set stretches above to 20 for default behavior) and :restful_authentication_sha1
   # (then you should set stretches to 10, and copy REST_AUTH_SITE_KEY to pepper)
   config.encryptor = :bcrypt
 
   # Setup a pepper to generate the encrypted password.
-  config.pepper = "388a5cdc2dd7a69932d0cb0d21ebe45cee670ea475a17d86a60b0c61c4e76a338bf64b26f60000cb01761f53e8ad4c1d0689756d2a0e97d37df5bb5d73a261e8"
+  config.pepper = "e986f64146d1d89b5c4c86913c78aa1bfb7aa904367d7978a407632f2e9b7f4247fd5e0abf95d198913ef1dac0b4aaf1f7ffd6667c0db66fc6361a0cd9ab6d0a"
 
   # ==> Configuration for :confirmable
   # The time you want to give your user to confirm his account. During this time
@@ -92,7 +92,7 @@ Devise.setup do |config|
   # :none  = No unlock strategy. You should handle unlocking by yourself.
   # config.unlock_strategy = :both
 
-  # Number of authentication.html.haml tries before locking an account if lock_strategy
+  # Number of authentication tries before locking an account if lock_strategy
   # is failed attempts.
   # config.maximum_attempts = 20
 
@@ -100,7 +100,7 @@ Devise.setup do |config|
   # config.unlock_in = 1.hour
 
   # ==> Configuration for :token_authenticatable
-  # Defines name of the authentication.html.haml token params key
+  # Defines name of the authentication token params key
   # config.token_authentication_key = :auth_token
 
   # ==> Scopes configuration
