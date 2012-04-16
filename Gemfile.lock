@@ -86,6 +86,7 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    memcache-client (1.8.5)
     mime-types (1.18)
     multi_json (1.2.0)
     mysql2 (0.3.11)
@@ -166,6 +167,7 @@ DEPENDENCIES
   execjs
   haml
   jquery-rails
+  memcache-client
   mysql2
   paperclip!
   rails (= 3.2.3)

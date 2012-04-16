@@ -1,5 +1,4 @@
 require "bundler/capistrano"
-require "sprockets"
 
 load 'deploy/assets'
 

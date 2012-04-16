@@ -12,10 +12,10 @@ gem 'mysql2'
 # gem 'unicorn'
 
 # Deploy with Capistrano
- gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
- gem 'ruby-debug'
+gem 'ruby-debug'
 
 gem "haml"
 gem "jquery-rails"
@@ -28,13 +28,14 @@ gem 'tinymce-rails'
 
 gem 'sprockets'
 gem 'sass-rails' # if running rails 3.1 or greater
+gem 'memcache-client'
 
-group :assets do
+#group :assets do
   gem 'compass-rails'
   gem 'uglifier'
   gem 'execjs'
   gem 'therubyracer'
-end
+#end
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'
