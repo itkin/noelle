@@ -26,6 +26,7 @@ gem "active_scaffold"
 gem "exception_notification"
 gem 'tinymce-rails'
 
+gem 'sprockets'
 gem 'sass-rails' # if running rails 3.1 or greater
 
 group :assets do

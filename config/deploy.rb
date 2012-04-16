@@ -1,4 +1,6 @@
 require "bundler/capistrano"
+require "sprockets"
+
 load 'deploy/assets'
 
 django = "django.webflows.fr"

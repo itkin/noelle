@@ -171,6 +171,7 @@ DEPENDENCIES
   rails (= 3.2.3)
   ruby-debug
   sass-rails
+  sprockets
   therubyracer
   tinymce-rails
   uglifier
