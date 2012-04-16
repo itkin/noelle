@@ -8,4 +8,4 @@
 
         %ul.projects{:style => params[:id] != category.id.to_s ? "display:none" : ''}
           - category.projects.displayable.each do |project|
-            %li= link_to project.title, category_project_path(category,project)
+            %li= link_to project.title, project.comment.blank? ? category_project_path(category,project) : comment_category_project_path(category, project)

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120416134957) do
+ActiveRecord::Schema.define(:version => 20120416194724) do
 
   create_table "attachments", :force => true do |t|
     t.integer  "position"
@@ -80,6 +80,8 @@ ActiveRecord::Schema.define(:version => 20120416134957) do
     t.datetime "updated_at"
     t.string   "sub_title"
     t.boolean  "display",     :default => true
+    t.text     "comment"
+    t.integer  "timer",       :default => 0
   end
 
   create_table "subscribers", :force => true do |t|

@@ -15,8 +15,8 @@
     width: 960px;
     left: -283px;
     bottom: -112px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: none;
+    border-bottom: none;
     padding: 5px 0;
 }
 .galleria-container img {

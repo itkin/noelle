@@ -1,0 +1,15 @@
+= content_for :side_content do
+  %h2
+    .title= @project.title
+    .sub_title= @project.sub_title
+
+#project_comment
+  %div
+    = link_to "Accéder au diaporama", category_project_path(@category,@project), :class => 'access_to_project top'
+    = raw @project.comment
+    = link_to "Accéder au diaporama", category_project_path(@category,@project), :class => 'access_to_project bottom'
+
+= content_for :back do
+  = link_to "", categories_path, :class=> 'back'
+
+= javascript_tag "displayProject(#{@project.timer*1000})" unless @project.timer.to_i == 0

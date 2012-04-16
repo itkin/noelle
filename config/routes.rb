@@ -31,8 +31,14 @@ Noelle::Application.routes.draw do
   end
 
   resources :categories, :only => [:index, :show] do
-    resources :projects, :only => [:show]
+    resources :projects, :only => [:show] do
+      member do
+        get :comment
+      end
+    end
   end
+
+
   resources :attachments, :only => :show
   resources :subscribers, :only => :create
 

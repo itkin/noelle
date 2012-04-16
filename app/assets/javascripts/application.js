@@ -34,9 +34,12 @@ function displayProject(timer){
       counter: false
     });
 
+    setTimeout(function(){
+      $(".galleria-thumbnails-container").css({borderBottom: "1px solid black", borderTop: "1px solid black"})
+    }, 1000)
 
     // Barre de défilement sur les pages custo
-    $("#page_content, #category_comment").jScrollPane();
+    $("#page_content, #category_comment, #project_comment").jScrollPane();
 
 
     // Animations du menu
