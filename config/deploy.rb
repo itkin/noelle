@@ -47,6 +47,7 @@ namespace :compass do
 end
 
 after "deploy:update_code", :copy_production_database_configuration
+before 'deploy:assets:precompile', :copy_production_database_configuration
 after "bundle:install", 'compass:compile'
 #after "compass:compile", "deploy:update_crontab"
 
