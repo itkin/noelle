@@ -30,12 +30,12 @@ gem 'sprockets'
 gem 'sass-rails' # if running rails 3.1 or greater
 gem 'memcache-client'
 
-#group :assets do
+group :assets do
   gem 'compass-rails'
   gem 'uglifier'
   gem 'execjs'
   gem 'therubyracer'
-#end
+end
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'
