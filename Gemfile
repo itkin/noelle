@@ -26,8 +26,9 @@ gem "active_scaffold"
 gem "exception_notification"
 gem 'tinymce-rails'
 
+gem 'sass-rails' # if running rails 3.1 or greater
+
 group :assets do
-  gem 'sass-rails' # if running rails 3.1 or greater
   gem 'compass-rails'
   gem 'uglifier'
   gem 'execjs'
