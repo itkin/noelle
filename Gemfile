@@ -27,10 +27,11 @@ gem "exception_notification"
 gem 'tinymce-rails'
 
 gem 'sprockets'
-gem 'sass-rails' # if running rails 3.1 or greater
+
 gem 'memcache-client'
 
 group :assets do
+  gem 'sass-rails' # if running rails 3.1 or greater
   gem 'compass-rails'
   gem 'uglifier'
   gem 'execjs'
