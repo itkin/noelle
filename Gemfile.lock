@@ -1,4 +1,14 @@
 GIT
+  remote: git://github.com/plataformatec/devise.git
+  revision: 64c99bcfd4da13d4a221015e686c1144b19c3cb0
+  specs:
+    devise (2.1.0.rc)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.0.7)
+      railties (~> 3.1)
+      warden (~> 1.1.1)
+
+GIT
   remote: git://github.com/thoughtbot/paperclip.git
   revision: 02d99ec3989408da7c4e98a2ea083747f9cb1b60
   specs:
@@ -59,11 +69,6 @@ GEM
       sass (~> 3.1)
     compass-rails (1.0.1)
       compass (~> 0.12.0)
-    devise (2.0.4)
-      bcrypt-ruby (~> 3.0)
-      orm_adapter (~> 0.0.3)
-      railties (~> 3.1)
-      warden (~> 1.1.1)
     erubis (2.7.0)
     exception_notification (2.5.2)
       actionmailer (>= 3.0.4)
@@ -162,7 +167,7 @@ DEPENDENCIES
   active_scaffold
   capistrano
   compass-rails
-  devise
+  devise!
   exception_notification
   execjs
   haml

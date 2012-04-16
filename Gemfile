@@ -19,7 +19,7 @@ gem 'ruby-debug'
 
 gem "haml"
 gem "jquery-rails"
-gem "devise"
+gem "devise", :git => "git://github.com/plataformatec/devise.git"
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 #gem "active_scaffold_vho", "~> 3.1.3"
 gem "active_scaffold"
