@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::PicturesController < Admin::ApplicationController
 
   active_scaffold :picture do |config|

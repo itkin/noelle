@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Admin::CategoriesHelper
 
   def comment_form_column(record, options)

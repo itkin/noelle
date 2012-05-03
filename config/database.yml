@@ -2,12 +2,10 @@
 #   gem install sqlite3-ruby (not necessary on OS X Leopard)
 development:
   adapter: mysql2
-  encoding: latin1
   database: noelle_prod
   password: rails
   username: rails
-  socket: /tmp/mysql.sock
-  
+  encoding: latin1
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

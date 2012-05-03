@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddCommentToProject < ActiveRecord::Migration
   def change
     add_column :projects, :comment, :text

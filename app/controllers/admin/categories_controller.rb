@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::CategoriesController < Admin::ApplicationController
 
   active_scaffold :category do |config|

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Admin::PagesHelper
   def content_column(record)
     raw record.content

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::ProjectsController < ApplicationController
 
   active_scaffold :project do |config|

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class RenameLabelIntoTitle < ActiveRecord::Migration
   def self.up
     rename_column :categories, :label, :title

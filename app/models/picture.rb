@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Picture < ActiveRecord::Base
 
   has_attached_file :image,

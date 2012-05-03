@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddDisplayToCategoriesAndProjects < ActiveRecord::Migration
   def self.up
     add_column :categories, :display, :boolean, :default => true

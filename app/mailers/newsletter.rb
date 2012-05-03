@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Newsletter < ActionMailer::Base
 
   def report(subscriber)

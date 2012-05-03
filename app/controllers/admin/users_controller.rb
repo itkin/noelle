@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::UsersController < Admin::ApplicationController
   active_scaffold :user do |config|
     config.show.columns = config.list.columns = [:email]

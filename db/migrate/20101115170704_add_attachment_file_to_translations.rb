@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddAttachmentFileToTranslations < ActiveRecord::Migration
   def self.up
     add_column :translations, :file_file_name, :string

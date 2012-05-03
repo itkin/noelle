@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Admin::SubscribersHelper
 
   def created_at_column(record)

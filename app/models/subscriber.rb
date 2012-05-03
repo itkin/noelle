@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Subscriber < ActiveRecord::Base
 
   after_save :send_report

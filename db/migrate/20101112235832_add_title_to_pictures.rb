@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddTitleToPictures < ActiveRecord::Migration
   def self.up
     add_column :pictures, :title, :string

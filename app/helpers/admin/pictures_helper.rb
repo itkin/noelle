@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Admin::PicturesHelper
 
   def image_column(record)

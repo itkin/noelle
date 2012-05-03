@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::SubscribersController < Admin::ApplicationController
 
   active_scaffold :subscriber do |config|

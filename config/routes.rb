@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 Noelle::Application.routes.draw do
 
   devise_for :users

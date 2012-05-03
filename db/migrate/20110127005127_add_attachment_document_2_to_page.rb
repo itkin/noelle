@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddAttachmentDocument2ToPage < ActiveRecord::Migration
   def self.up
     add_column :pages, :document_2_file_name, :string

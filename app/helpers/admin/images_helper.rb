@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Admin::ImagesHelper
 
   def thumb_column(record)

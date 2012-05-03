@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::PagesController < Admin::ApplicationController
   active_scaffold :page do |config|
 

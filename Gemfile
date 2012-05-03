@@ -15,7 +15,7 @@ gem 'mysql2'
 gem 'capistrano'
 
 # To use debugger
-gem 'ruby-debug'
+#gem 'ruby-debug'
 
 gem "haml"
 gem "jquery-rails"
@@ -36,6 +36,10 @@ group :assets do
   gem 'uglifier'
   gem 'execjs'
   gem 'therubyracer'
+end
+
+group :test, :development do
+  gem "pry"
 end
 # Bundle the extra gems:
 # gem 'bj'
