@@ -28,7 +28,7 @@ Noelle::Application.routes.draw do
     resources :images do
       as_routes
     end
-    root :to => "pages#index"
+    root :to => "categories#index"
   end
 
   resources :categories, :only => [:index, :show] do
